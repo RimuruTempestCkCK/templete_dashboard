@@ -1,0 +1,42 @@
+<div id="view-orders" class="page-view">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Riwayat & Status Transaksi</h1>
+      <p class="page-subtitle">Pantau seluruh orderan masuk dari kasir maupun aplikasi drive-thru Starbucks Mobile.</p>
+    </div>
+  </div>
+
+  <div class="table-card-wrapper">
+    <div class="table-header-toolbar">
+      <div class="table-actions">
+        <input type="text" class="table-search-input" id="search-order-input" placeholder="Cari nama atau ID...">
+        <select class="chart-filter-select" id="filter-order-status">
+          <option value="all">Semua Status</option>
+          <option value="Diproses">Diproses</option>
+          <option value="Selesai">Selesai</option>
+          <option value="Dibatalkan">Dibatalkan</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table class="custom-table" id="order-history-table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Nama Pelanggan</th>
+            <th>Metode Pemesanan</th>
+            <th>Item Dipesan</th>
+            <th>Waktu Masuk</th>
+            <th>Status</th>
+            <th>Total Pembayaran</th>
+            <th>Aksi Status</th>
+          </tr>
+        </thead>
+        <tbody id="order-table-tbody">
+          <!-- Dynamic Content -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

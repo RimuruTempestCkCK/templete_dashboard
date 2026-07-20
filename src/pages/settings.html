@@ -1,0 +1,124 @@
+<div id="view-settings" class="page-view">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Pengaturan Sistem Portal</h1>
+      <p class="page-subtitle">Kelola konfigurasi dasar operasional store dan profil akun admin Anda.</p>
+    </div>
+  </div>
+
+  <div class="settings-grid">
+    <div class="settings-nav-card">
+      <div class="settings-nav-item active" data-settings-target="profile-settings">Profil Administrator</div>
+      <div class="settings-nav-item" data-settings-target="store-settings">Operasional Store</div>
+      <div class="settings-nav-item" data-settings-target="notif-settings">Notifikasi & Alerts</div>
+    </div>
+
+    <!-- Profile Settings Block -->
+    <div id="profile-settings" class="settings-form-card">
+      <h3 style="font-size: 1.8rem; margin-bottom: 2.4rem;">Informasi Akun Profil</h3>
+      
+      <div class="form-grid-row">
+        <div class="form-group-block">
+          <label class="form-label-text">Nama Lengkap</label>
+          <input type="text" class="form-control-input" id="set-admin-name" value="Maximilian Top">
+        </div>
+        <div class="form-group-block">
+          <label class="form-label-text">Jabatan / Role</label>
+          <input type="text" class="form-control-input" value="Store Manager" disabled style="background-color: var(--bg-tertiary);">
+        </div>
+      </div>
+
+      <div class="form-grid-row">
+        <div class="form-group-block">
+          <label class="form-label-text">Email Portal</label>
+          <input type="email" class="form-control-input" id="set-admin-email" value="admin@starbucks.co.id">
+        </div>
+        <div class="form-group-block">
+          <label class="form-label-text">Password Saat Ini</label>
+          <input type="password" class="form-control-input" placeholder="••••••••">
+        </div>
+      </div>
+
+      <button class="btn-action-primary" id="btn-save-profile">Simpan Perubahan</button>
+    </div>
+
+    <!-- Store Settings Block (Hidden initially) -->
+    <div id="store-settings" class="settings-form-card" style="display: none;">
+      <h3 style="font-size: 1.8rem; margin-bottom: 2.4rem;">Operasional Starbucks Store</h3>
+      
+      <div class="form-grid-row">
+        <div class="form-group-block">
+          <label class="form-label-text">Nama Store</label>
+          <input type="text" class="form-control-input" value="Sudirman Hub, Jakarta">
+        </div>
+        <div class="form-group-block">
+          <label class="form-label-text">Nomor Registrasi Toko</label>
+          <input type="text" class="form-control-input" value="SB-IDN-3042" disabled style="background-color: var(--bg-tertiary);">
+        </div>
+      </div>
+
+      <div class="form-group-block" style="margin-bottom: 2.4rem;">
+        <label class="form-label-text">Alamat Toko</label>
+        <input type="text" class="form-control-input" value="Gedung Artha Graha Ground Floor, Jl. Jend. Sudirman Kav 52-53, Jakarta Selatan">
+      </div>
+
+      <div class="form-grid-row">
+        <div class="form-group-block">
+          <label class="form-label-text">Jam Buka</label>
+          <input type="text" class="form-control-input" value="07:00 AM">
+        </div>
+        <div class="form-group-block">
+          <label class="form-label-text">Jam Tutup</label>
+          <input type="text" class="form-control-input" value="10:00 PM">
+        </div>
+      </div>
+
+      <button class="btn-action-primary" id="btn-save-store">Simpan Info Toko</button>
+    </div>
+
+    <!-- Notification Settings Block (Hidden initially) -->
+    <div id="notif-settings" class="settings-form-card" style="display: none;">
+      <h3 style="font-size: 1.8rem; margin-bottom: 2.4rem;">Kustomisasi Alerts & Notifikasi</h3>
+      
+      <div class="form-toggle-switch">
+        <div class="toggle-details">
+          <div class="toggle-title">Alert Pesanan Masuk</div>
+          <div class="toggle-subtitle">Kirim notifikasi toast dan bunyikan lonceng saat ada pesanan masuk dari mobile.</div>
+        </div>
+        <label style="position: relative;">
+          <input type="checkbox" class="switch-input-element" checked>
+          <span class="switch-label-node"></span>
+        </label>
+      </div>
+
+      <div class="settings-section-divider"></div>
+
+      <div class="form-toggle-switch">
+        <div class="toggle-details">
+          <div class="toggle-title">Stok Hampir Habis</div>
+          <div class="toggle-subtitle">Beri peringatan warna merah di menu jika stok bahan baku / cup di bawah 15 pcs.</div>
+        </div>
+        <label style="position: relative;">
+          <input type="checkbox" class="switch-input-element" checked>
+          <span class="switch-label-node"></span>
+        </label>
+      </div>
+
+      <div class="settings-section-divider"></div>
+
+      <div class="form-toggle-switch">
+        <div class="toggle-details">
+          <div class="toggle-title">Laporan Penjualan Harian</div>
+          <div class="toggle-subtitle">Kirim email rangkuman pendapatan otomatis ke regional manager jam 10 malam.</div>
+        </div>
+        <label style="position: relative;">
+          <input type="checkbox" class="switch-input-element">
+          <span class="switch-label-node"></span>
+        </label>
+      </div>
+
+      <button class="btn-action-primary" id="btn-save-notif">Simpan Preferensi Notifikasi</button>
+    </div>
+
+  </div>
+</div>

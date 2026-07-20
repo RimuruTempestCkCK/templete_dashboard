@@ -1,0 +1,49 @@
+<div id="view-analytics" class="page-view">
+  <div class="page-header">
+    <div>
+      <h1 class="page-title">Analitik Lanjutan Toko</h1>
+      <p class="page-subtitle">Diagram visual komprehensif mengenai waktu puncak transaksi, penjualan bulanan, dan performa barista.</p>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card-wrapper">
+      <div class="chart-card-header">
+        <h3 class="chart-card-title">Penjualan Bulanan (Semester 1)</h3>
+      </div>
+      <div class="chart-canvas-container">
+        <canvas id="monthlySalesChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card-wrapper">
+      <div class="chart-card-header">
+        <h3 class="chart-card-title">Puncak Jam Sibuk Transaksi</h3>
+      </div>
+      <div class="chart-canvas-container">
+        <canvas id="hourlyPeakChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Metric Cards -->
+  <div class="stats-grid">
+    <div class="stat-card" style="flex-direction: column; align-items: flex-start; gap: 1.5rem;">
+      <h4 style="font-size: 1.4rem; color: var(--text-secondary);">Kepuasan Pelanggan</h4>
+      <div style="font-size: 3.6rem; font-weight: 700; color: var(--sb-green-accent);">98.4%</div>
+      <p style="font-size: 1.2rem; color: var(--text-secondary);">Dari 1,240 responden survey aplikasi mobile.</p>
+    </div>
+    
+    <div class="stat-card" style="flex-direction: column; align-items: flex-start; gap: 1.5rem;">
+      <h4 style="font-size: 1.4rem; color: var(--text-secondary);">Kecepatan Penyajian</h4>
+      <div style="font-size: 3.6rem; font-weight: 700; color: var(--sb-gold);">2.4 Menit</div>
+      <p style="font-size: 1.2rem; color: var(--text-secondary);">Waktu rata-rata per racikan cup kopi.</p>
+    </div>
+
+    <div class="stat-card" style="flex-direction: column; align-items: flex-start; gap: 1.5rem;">
+      <h4 style="font-size: 1.4rem; color: var(--text-secondary);">Target Bulanan Toko</h4>
+      <div style="font-size: 3.6rem; font-weight: 700; color: var(--color-info);">84.6%</div>
+      <p style="font-size: 1.2rem; color: var(--text-secondary);">Rp 253.800.000 tercapai dari target Rp 300.000.000.</p>
+    </div>
+  </div>
+</div>
